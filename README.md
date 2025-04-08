@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Premium Collection - E-commerce Product Listing Page
 
-## Getting Started
+This is an implementation of a Product Listing Page (PLP) for a fashion e-commerce website built with Next.js, focusing on best practices in web development including SEO optimization, responsive design, and server-side rendering.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Server-Side Rendering (SSR)**: Optimized page loading and SEO using Next.js SSR capabilities
+- **Responsive Design**: Fully responsive layout for mobile, tablet, and desktop devices
+- **SEO Optimization**: 
+  - Proper HTML semantic structure with H1 & H2 tags
+  - Schema.org markup for products and breadcrumbs
+  - SEO-friendly image names with alt text
+  - Optimized meta tags and page descriptions
+- **Clean Architecture**:
+  - Component-based structure
+  - Clear separation of concerns
+  - Meaningful naming conventions
+  - Minimal dependencies
+
+## Technology Stack
+
+- **Framework**: Next.js (React)
+- **Styling**: Plain CSS (No CSS frameworks as per requirements)
+- **Data Fetching**: Fake Store API
+- **Deployment**: Netlify
+- **Version Control**: GitHub
+
+## Implementation Details
+
+### Code Structure
+
+The project follows a clean, organized structure:
+
+- `components/`: Reusable UI components
+- `lib/`: Utility functions and API calls
+- `public/`: Static assets
+- `styles/`: CSS stylesheet
+
+## Installation and Setup
+
+1. Clone the repository:
+```
+git clone https://github.com/bisht1418/appscrip-task-neerai-singh-bisht.git
+cd Appscrip-task-neeraj-singh-bisht
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Run the development server:
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Build for production:
+```
+npm run build
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The site is deployed on Netlify: [Live Demo](https://appscript-assignment-neeraj.netlify.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is created as part of a technical assessment for Appscrip.
