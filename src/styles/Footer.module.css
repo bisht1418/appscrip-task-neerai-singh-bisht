@@ -11,8 +11,9 @@
   margin-bottom: 40px;
 }
 
-.signupSection, .contactSection {
-  width: 40%;
+.signupSection,
+.contactSection {
+  width: 30%;
 }
 
 .sectionTitle {
@@ -23,7 +24,7 @@
 
 .signupText {
   font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .subscribeForm {
@@ -67,6 +68,8 @@
 
 .currencySelector {
   display: flex;
+  gap: 10px;
+
   align-items: center;
   margin-bottom: 10px;
 }
@@ -99,7 +102,9 @@
   margin-bottom: 40px;
 }
 
-.brandSection, .quickLinksSection, .followSection {
+.brandSection,
+.quickLinksSection,
+.followSection {
   width: 30%;
 }
 
@@ -174,19 +179,56 @@
   padding-top: 20px;
 }
 
-/* Responsive adjustments */
+.contactInfoSection {
+  width: 100%;
+  border-bottom: 2px solid white;
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+
+.arrowIcon{
+  display: none;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 30px 20px;
   }
 
-  .upperSection, .mainSection {
+  .upperSection,
+  .mainSection {
     flex-direction: column;
+    margin-bottom: 0px;
   }
 
-  .signupSection, .contactSection, 
-  .brandSection, .quickLinksSection, .followSection {
+  .signupSection,
+  .contactSection,
+  .brandSection,
+  .quickLinksSection,
+  .followSection {
     width: 100%;
-    margin-bottom: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .brandTitle,
+  .sectionTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .arrowIcon {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
   }
 }

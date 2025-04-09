@@ -8,7 +8,7 @@ import styles from "../styles/Page.module.css";
 import FilterToggle from "../components/FilterToggle";
 
 export default function ProductPageContent({ products }) {
-    const [isFilterVisible, setIsFilterVisible] = useState(true);
+    const [isFilterVisible, setIsFilterVisible] = useState(false);
 
     const toggleFilter = () => {
         setIsFilterVisible(!isFilterVisible);
