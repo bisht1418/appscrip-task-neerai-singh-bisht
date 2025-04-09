@@ -14,7 +14,7 @@ export const metadata = {
     images: ["/images/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://your-store-domain.com/products",
+    canonical: "https://appscript-assignment-neeraj.netlify.app",
   },
 }
 

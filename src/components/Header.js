@@ -7,6 +7,7 @@ import Heart from "../assets/heart.png"
 import ShoppingBag from "../assets/shopping-bag.png"
 import Profile from "../assets/profile.png"
 import Arrow from "../assets/arrow-left.png"
+import Hamburger from "../assets/hamburger.png"
 
 export default function Header() {
 
@@ -14,14 +15,23 @@ export default function Header() {
     { src: Search, alt: "Search" },
     { src: Heart, alt: "Wishlist" },
     { src: ShoppingBag, alt: "Shopping Bag", badge: 3 },
-    { src: Profile, alt: "Profile" },
-    { src: Arrow, alt: "Arrow", text: "ENG" }
+    { src: Profile, alt: "Profile", hideOnMobile: true },
+    { src: Arrow, alt: "Arrow", text: "ENG", hideOnMobile: true }
   ];
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.headerContent}>
+
           <div className={styles.logo}>
+            <div className={styles.hamburger}>
+              <Image
+               src={Hamburger}
+               alt={"Logo"}
+               width={20}
+               height={20}
+              />
+            </div>
             <Link href="/" className={styles.logoLink}>
               <Image
                 src={Logo}
@@ -40,7 +50,10 @@ export default function Header() {
 
           <div className={styles.iconGroup}>
             {icons.map((icon, index) => (
-              <div key={index} className={styles.iconButton}>
+              <div
+                key={index}
+                className={`${styles.iconButton} ${icon.hideOnMobile ? styles.hideOnMobile : ''}`}
+              >
                 {icon.text && <span className={styles.languageText}>{icon.text}</span>}
                 <Image
                   src={icon.src}
@@ -50,9 +63,9 @@ export default function Header() {
                   className={styles.icon}
                 />
                 {icon.badge && <span className={styles.cartCount}>{icon.badge}</span>}
-
               </div>
             ))}
+
           </div>
         </div>
 

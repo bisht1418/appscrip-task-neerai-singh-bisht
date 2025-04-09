@@ -1,124 +1,162 @@
 .header {
-    border-bottom: 1px solid #e5e7eb;
-    margin-top: 1.25rem;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  .headerContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    flex-shrink: 0;
-  }
-  
-  .logoLink {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logoText {
-    font-size: 2.25rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
+  border-bottom: 1px solid #e5e7eb;
+  margin-top: 1.25rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.desktopNav {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  margin-top: 3.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.languageText {
+  font-weight: 700;
+  color: #252020;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
   .desktopNav {
-    display:flex;
-    justify-content: center;
-    gap:64px;
-    margin-top: 3.75rem;
-    margin-bottom: 1.5rem;
+    display: none;
+  }
+}
+
+.navLink {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #252020;
+  transition: color 0.2s;
+  letter-spacing: 1px;
+}
+
+.navLink:hover {
+  color: #111827;
+}
+
+.iconGroup {
+  display: flex;
+  align-items: center;
+}
+
+.iconButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #4b5563;
+  margin-left: 1rem;
+  transition: color 0.2s;
+}
+
+.iconButton:hover {
+  color: #111827;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.cartCount {
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.75rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileMenuButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #4b5563;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .mobileMenuButton {
+    display: none;
+  }
+}
+
+.hideOnMobile {
+  display: inline-flex;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .hideOnMobile {
+    display: none;
   }
 
-  .languageText{
-    font-weight: 700;
+  .logoText {
+    font-size: 20px;
+  }
+
+  .hamburger {
+    display: block;
+    font-weight: 800;
     color: #252020;
-    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+  }
+
+  .logoLink img {
+    width: 20px ;
+    height: 20px;
   }
   
-  @media (min-width: 768px) {
-    .desktopNav {
-      display: flex;
-    }
-  }
-  
-  .navLink {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #252020;
-    transition: color 0.2s;
-    letter-spacing: 1px;
-  }
-  
-  .navLink:hover {
-    color: #111827;
-  }
-  
-  .iconGroup {
+
+  .logo {
     display: flex;
-    align-items: center;
-  }
-  
-  .iconButton {
-    position: relative;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    background: transparent;
-    border: none;
-    color: #4b5563;
-    margin-left: 1rem;
-    transition: color 0.2s;
-  }
-  
-  .iconButton:hover {
-    color: #111827;
-  }
-  
-  .icon {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  
-  .cartCount {
-    position: absolute;
-    top: -0.25rem;
-    right: -0.25rem;
-    background-color: #ef4444;
-    color: white;
-    font-size: 0.75rem;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 9999px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 1rem;
   }
-  
-  .mobileMenuButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border: none;
-    color: #4b5563;
-    margin-left: 1rem;
-  }
-  
-  @media (min-width: 768px) {
-    .mobileMenuButton {
-      display: none;
-    }
-  }
-  
+}

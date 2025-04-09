@@ -5,7 +5,7 @@ import styles from "../styles/FilterToggle.module.css"
 export default function FilterToggle({ onToggle, isVisible }) {
   return (
     <div className={styles.toggleContainer}>
-      <div>
+      <div className={styles.itemCountContainer}>
         <span className={styles.itemCount}>3425 ITEMS</span>
       </div>
       <div className={styles.toggleButtonContainer}>
