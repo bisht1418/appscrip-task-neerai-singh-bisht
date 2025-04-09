@@ -78,5 +78,8 @@
 @media (max-width: 640px) {
   .dropdownButton {
     min-width: 8rem;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
   }
 }

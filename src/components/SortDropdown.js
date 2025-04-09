@@ -31,7 +31,7 @@ export default function SortDropdown() {
     <div className={styles.container}>
       <button onClick={() => setIsOpen(!isOpen)} className={styles.dropdownButton}>
         <span>
-          {getCurrentLabel()}
+          {getCurrentLabel()?.toUpperCase()}
         </span>
         <svg
           className={`${styles.chevronIcon} ${isOpen ? styles.chevronOpen : ''}`}

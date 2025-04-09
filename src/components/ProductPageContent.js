@@ -16,6 +16,11 @@ export default function ProductPageContent({ products }) {
 
     return (
         <section className={styles.heroSection}>
+            <div className={styles.breadcrumbs}>
+               <p>HOME</p> 
+               <p className={styles.breadcrumbsDivider}></p>
+               <p className={styles.activeBreadcrumb}>PRODUCT</p> 
+            </div>
             <div className={styles.heroContent}>
                 <h1 className={styles.heroTitle}>DISCOVER OUR PRODUCTS</h1>
                 <p className={styles.heroDescription}>
@@ -29,6 +34,7 @@ export default function ProductPageContent({ products }) {
                     onToggle={toggleFilter}
                     isVisible={isFilterVisible}
                 />
+                <div className={styles.divider}></div>
                 <div className={styles.sortContainer}>
                     <SortDropdown />
                 </div>

@@ -6,12 +6,6 @@
     width: 100%;
   }
 
-  @media (max-width: 768px) {
-    .itemCountContainer {
-      display: none;
-    }
-  }
-
   .itemCount {
     font-weight: bold;
     font-size: 14px;
@@ -68,4 +62,26 @@
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    .itemCountContainer {
+      display: none;
+    }
+
+    .toggleIcon{
+      display: none;
+    }
+
+    .toggleButton{
+      border: none;
+      text-decoration: none;
+      color: #000;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .toggleContainer{
+      padding: 0px;
+    }
   }
