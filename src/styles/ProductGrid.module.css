@@ -2,12 +2,11 @@
 .productGrid_isSidebarClose {
   display: grid;
   gap: 1.5rem 1rem;
-  width: 100%;
   transition: all 0.3s ease-in-out;
 }
 
 .productGrid_isSidebarOpen {
-  width: calc(100% - 250px);
+  width: auto
 }
 
 .productGrid_isSidebarOpen,
